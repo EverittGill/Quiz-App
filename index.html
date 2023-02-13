@@ -9,8 +9,10 @@
     <title>Quiz App</title>
 </head>
 <body>
-    <section class="view-high-scores"></section>
-    <section class="timer"></section>
+    <section class="display-absolute">
+        <div id="view-high-scores"><p>View High Scores</p></div>
+        <div id="timer"><p>Timer</p></div>
+    </section>    
     
     <section class="wrapper">
       <div id="start-screen">
@@ -21,15 +23,20 @@
     
     
      <section class="hidden" id="questions">
-        <h2 id="question-title"></h2>
-        <div class="answers"></div>
+        <h2 id="question-title">What's the best first question</h2>
+        <div class="answers">
+            <button id="question1">test1</button>
+            <button id="question1">test2</button>
+            <button id="question1">test3</button>
+            <button id="question1">test4</button>
+        </div>
      </section>
 
      
-     <section class="hidden" id="scoreboard">
+     <section class="hidden" id="log-score">
         <h2>GAME OVER</h2>
         <p>How fast did you think and how carefully did you click?
-            check your score and break it quick. <span id="your-score"></span>.</p>
+            Log your score and break it quick. <span id="your-score"></span>.</p>
         <p>Enter your initials: <input type="text" id="initials" max="4"/>
             <button id="Submit">Submit</button></p>
      </section>
