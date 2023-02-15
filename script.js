@@ -1,3 +1,44 @@
+
+
+
+
+
+var startButton = document.getElementById("start-button");
+var startScreen = document.getElementById("start-screen");
+var questions = document.getElementById("questions")
+// element.addEventListener("click", toggleDiv())
+
+function showQuestions() {
+    startScreen.setAttribute("style", "display: none;");
+    questions.setAttribute("style", "display: "";)
+}
+
+
+
+
+// function toggleDiv() {
+//     var startScreen = document.getElementById("start-screen");
+//     var questions = document.getElementById("questions");
+   
+//     if (startScreen.style.color === "") {
+//         startScreen.style.color = "none";
+//         questions.style.display = "";
+//     } else {
+//         return
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
 // display welcome screen
 // display a start button that's linked to the timer, needs it's own onclick function
 // when start button is clicked, display the questions and answers, and get rid of the welcome screen. getelementbyid"welcomescreen" setattribute.style.displayNone
