@@ -1,17 +1,40 @@
-
-
-
-
-
+// global variables
 var startButton = document.getElementById("start-button");
 var startScreen = document.getElementById("start-screen");
 var questions = document.getElementById("questions")
-// element.addEventListener("click", toggleDiv())
+var timer;
+var seconds = 120
+var countdown = document.getElementById("timer");
 
+
+
+// event listeners
+startButton.addEventListener("click", showQuestions()); 
+
+
+// moves from the start screen to the question screen
 function showQuestions() {
-    startScreen.setAttribute("style", "display: none;");
-    questions.setAttribute("style", "display: "";)
+    startScreen.setAttribute("style", "display: none");
+    questions.setAttribute("style", "display: flex");
+    timer()
 }
+
+function timer(){
+    timer = setInterval(() => {
+        countdown.innerHTML = "Your score " + seconds;
+        seconds--;
+    }, 1000)
+}
+
+
+
+// timer = setInterval(() => {
+    //     ele.innerHTML = "Your Score " + seconds;
+    //     seconds--;
+    // }, 1000)
+
+
+
 
 
 
